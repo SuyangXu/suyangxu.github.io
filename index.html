@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Suyang Xu, personal webpage</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		
+		<script>
+		function show(shown, hidden) {
+  			document.getElementById(shown).style.display='block';
+ 			document.getElementById(hidden).style.display='none';
+  			return false;
+		}
+		</script>
+	</head>
+	<body>
+		<div id="research">
+   		 	Content of research
+    			<a href="#" onclick="return show('projects','research');">projects</a>
+ 		</div>
+
+  		<div id="projects" style="display:none">
+   			 Content of projects
+    			<a href="#" onclick="return show('research','projects');">research</a>
+	  	</div>
+		
+		<footer>
+    		<ul>
+        		<li><a href="suyang.xu@rhsmith.umd.edu">email</a></li>
+        		<li><a href="https://github.com/SuyangXu">ggithub.com/SuyangXu</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
