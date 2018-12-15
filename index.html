@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Suyang Xu, personal webpage</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		
+		<title>sxu's personal webpage</title>
+		<link rel="stylesheet" href="styling1.css">
+
 		<script>
 		function show(shown, hidden) {
   			document.getElementById(shown).style.display='block';
@@ -13,21 +12,57 @@
 		}
 		</script>
 	</head>
-	<body>
-		<div id="research">
-   		 	Content of research
-    			<a href="#" onclick="return show('projects','research');">projects</a>
- 		</div>
 
-  		<div id="projects" style="display:none">
-   			 Content of projects
+	<body>
+		<intro>
+			<h1>Suyang Xu</h1>
+		</intro>
+
+		<subsection>
+			<div id="research">
+   		 	Research
+    			<a href="#" onclick="return show('projects','research');">projects</a>
+    			<div class="timeline">
+		  			<div class="container left">
+			    		<div class="content">
+					      <h2>Macro facor: Python</h2>
+					    </div>
+		  			</div>
+  			
+	  				<div class="container right">
+				    	<div class="content">
+					      <h2>Realized Volatility: SAS, R, Linux, PostgreSQL</h2>
+					    </div>
+	  				</div>
+				</div>
+ 			</div>
+
+  			<div id="projects" style="display:none">
+   			 Projects
     			<a href="#" onclick="return show('research','projects');">research</a>
-	  	</div>
-		
+    			<div class="timeline">
+		  			<div class="container left">
+			    		<div class="content">
+					      <h2>Big Data: AWS, Hadoop, PySpark</h2>
+					    </div>
+		  			</div>
+  			
+	  				<div class="container right">
+				    	<div class="content">
+					      <h2>Data Mining: R, Excel</h2>
+					    </div>
+	  				</div>
+				</div>
+	  		</div>
+
+			<p><center>Draft for now. All inforamtion is PRIVATE!!!
+			Copyright by Suyang Xu</center></p>
+		</subsection>
+
 		<footer>
     		<ul>
         		<li><a href="suyang.xu@rhsmith.umd.edu">email</a></li>
-        		<li><a href="https://github.com/SuyangXu">ggithub.com/SuyangXu</a></li>
+        		<li><a href="https://github.com/SuyangXu">github.com/SuyangXu</a></li>
 			</ul>
 		</footer>
 	</body>
